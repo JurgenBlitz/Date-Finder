@@ -9,6 +9,10 @@ function findMyNewDate(n) {
     */
     return new Date(modifiedDate);
     // output YYYY-MM-DD-T-HH:MM:SS.msZ
+    /* As an additional option, if we want to return it in a 'YYYY-MM-DD',
+       we can change line 10 for the following:
+        return new Date(modifiedDate).toISOString().split('T')[0];
+    */
   }
   
   findMyNewDate(5);
